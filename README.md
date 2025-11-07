@@ -5,10 +5,10 @@ Feel free to use any languages or frameworks, but the following information must
 _______________
 _______________
 
-# Project Name
+# Pulse Point
 
 ## Challenge Statement(s) Addressed 🎯
-**...include the challenge statement(s) the project worked to address**
+--> How can we
 
 Examples:
 * How might we decrease the United States chances of alien and monster attacks given what we know from popular alien and monster movies?
@@ -35,9 +35,9 @@ Example:
 
 ### Team Checklist ✅
 - [ ] Team photo
-- [ ] Team Slack channel
-- [ ] Communication established with mentor
-- [ ] Repo creation from this template
+- [] Team Slack channel
+- [] Communication established with mentor
+- [] Repo creation from this template
 - [ ] Flight Deck registration
 
 ### Project Checklist 🏁
@@ -45,13 +45,13 @@ Example:
 - [ ] Code merged to main branch
 
 ### School Name 🏫
-The ABC School
+Florida Memorial University
 
 ### Team Name 🏷
-Coding Costars
+Miami Lion's Byte
 
 ### ✨ Contributors ✨
-**...tell the world who you and your team are 🙂**
-* Team member X 
-* Team member Y 
-* Team member Z 
+* Tyla Bartlett
+* Omari Bent 
+* Maraunda Saunders
+* Amauri Straford 
