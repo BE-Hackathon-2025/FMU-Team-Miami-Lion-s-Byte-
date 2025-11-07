@@ -35,15 +35,9 @@ _______________
 - VS Code
 - 
 
-Example:
-* FastAPI
-* Hugging Face AI Models
-* Next.js
-* Java
-* ReactJS
-
 ### Link to Demo Presentation 📽
-https://lionsfmuniv-my.sharepoint.com/:p:/g/personal/astr1108_fmu_edu/Ec5nJIgo3z1Is_eTK6O1v1oBG5r07dPIxDGI_S7DXJEYNA?e=ElsDst
+PP: https://lionsfmuniv-my.sharepoint.com/:p:/g/personal/astr1108_fmu_edu/Ec5nJIgo3z1Is_eTK6O1v1oBG5r07dPIxDGI_S7DXJEYNA?e=ElsDst
+Code: 
 
 ### Team Checklist ✅
 - [ ] Team photo
