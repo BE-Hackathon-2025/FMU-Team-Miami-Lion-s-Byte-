@@ -14,15 +14,17 @@ _______________
 
 ## Project Description 🤯
 **....at least 3 sentences describing what the project does and how it works**
---> community based healthcare for college students and local residents
---> connects users to affordable and reliable healthcare providers and services
---> bridges the gap between people who need care and the organizations that provide it
+--> A local community healthcare resource for those who are in need, especially college students
+--> It connects people to particular clinics and professionals based on what's being sought out.
+--> It comes with a review system to give a sense of forum and allow others to gauge who they are and aren't willing to see
+--> Along with this there is also a chatbot dedicated to helping with mental health crises.
+--> Finally, there is a directory for those with specialized needs such as those suffering from self harm, substance abuse, or sexual health issues.
 
 ## Project Value 💰
 **....at least 3 sentences describing your target customer and tangible benefits from your solution**
---> the project is more so focused on college students, but other users can use it. PulsePoint allows for ideal solutions, connecting users to real doctors, clinics, and wellness programs. 
---> considering the heatlhcare industry is plummeting and US residents are seeking affordable and reliable healthcare, our platform will be ideal.
---> our platform will bring traffic. healthcare providers can buy AD space/have their services sponsored/reccommended when users search. allowing for potential customers.
+--> The main subject of focus for the project is college students, especially those who may be unfamiliar with their new environment.
+--> With the ongoing dire circumstances of the healthcare industry it's important for not just college students, but for everyone.
+--> Our platform works in a way that benefits everyone. It gives students access to potentially new, mainstay healthcare providers, as well as driving traffic to these places and companies.
 
 ## Tech Overview 💻
 **... what tech was used to bring this project to life?**
