@@ -37,11 +37,12 @@ _______________
 - CSS [Frontend]
 
 ### Link to Demo Presentation 📽
-PP: https://lionsfmuniv-my.sharepoint.com/:p:/g/personal/astr1108_fmu_edu/Ec5nJIgo3z1Is_eTK6O1v1oBG5r07dPIxDGI_S7DXJEYNA?e=ElsDst
+PP(canva slide deck): https://www.canva.com/design/DAG4EueJi80/3HSaolTpQ6qa85u3XEHgHQ/view?utm_content=DAG4EueJi80&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h7d526f6466
 Code: 
 
 ### Team Checklist ✅
 - [] Team photo
+- [TeamPhoto](https://github.com/user-attachments/assets/0a8cdbeb-9d07-4c30-9ab4-5261e9673313)
 - [] Team Slack channel
 - [] Communication established with mentor
 - [] Repo creation from this template
@@ -49,7 +50,8 @@ Code:
 
 ### Project Checklist 🏁
 - [ ] Presentation complete and linked 
-- [ ] Code merged to main branch
+- [ ] Code merged to main branch!
+
 
 ### School Name 🏫
 Florida Memorial University
