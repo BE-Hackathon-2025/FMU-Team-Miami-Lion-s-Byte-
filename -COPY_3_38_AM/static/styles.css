@@ -60,7 +60,9 @@ body {
 }
 
 .hero {
-  background-image: url('../images/students-studying-outdoors-stockcake.jpg');
+  /* styles.css lives at /static/styles.css, and images are at /static/images/
+     so use a path relative to the CSS file without going up a directory. EDITED BY AI */
+  background-image: url('images/bg_students.avif');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -69,11 +71,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: left;
+  text-align: center;
   flex-direction: column;
   padding: 0 20px;
 }
 
+/* This is what AI addded considering I wanted a black textbox background and i made too many errors */
+.hero-text {
+  background-color: rgba(0, 0, 0, 0.7); /* 30% opacity black background */
+  padding: 2rem;
+  border-radius: 10px; /* Optional: adds rounded corners */
+}
 
 .hero-text h2 {
   font-size: 48px;
@@ -123,9 +131,9 @@ body {
   line-height: 1.6;
 }
 
-/* Footer */
+/* Footer// Amauri made the footer black */
 footer {
-  background-color: red;
+  background-color: rgb(0, 0, 0); 
   color: white;
   text-align: center;
   padding: 15px 0;

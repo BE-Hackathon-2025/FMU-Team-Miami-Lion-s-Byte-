@@ -12,7 +12,9 @@
   <header class="navbar">
     <div class="logo">
         <img src="{{ url_for('static', filename='images/Pulse_Point_logo-removebg-preview.png') }}" alt="Pulse Point Logo">
-    </div>
+        <!-- <img src="{{ url_for('static', filename='images/IMG_1645.jpeg') }}" alt="Pulse Point Logo"> -->
+
+      </div>
 
     <nav>
       <ul class="nav-links">
@@ -20,17 +22,15 @@
         <li><a href="#community">Community Partners</a></li>
         <li><a href="#healthcare">Health Care Providers</a></li>
         <li><a href="#insurance">Insurance</a></li>
-        <li><a href="#insurance partners">Insurance Partners</a></li>
-
       </ul>
     </nav>
   </header>
 
-  <!-- Hero Section// what the class is called just for understanding purposes -->
+  <!-- Hero Section -->
   <section id="home" class="hero">
     <div class="hero-text">
       <h2>Welcome to Pulse Point</h2>
-      <p>One pulse away from better health!</p>
+      <p>One pulse away from better help!</p>
       <a href="#about" class="btn">Learn More</a>
     </div>
   </section>
@@ -68,22 +68,35 @@
     </p>
   </section>
 
-  <!-- Here we added the Insurance Partners for quick reference -->
+  <!-- Here we added the Insurance Partners for quick reference// AI added 77 & 78 -->
   <!-- Insurance Partners-->
   <section id="insurance partners" class="section red-bg">
     <h2>Insurance Partners</h2>
     <p>
-      Here are some of our trusted insurance partners: Alive & Well: Community Partners, UHealth: University of Miami Health System.
-      You can click on the links above to learn more directly about each partner from their websites.
+      Here are some of our trusted insurance partners: 
+      <a href="https://aliveandwellprogram.com/" target="_blank">Alive & Well: Community Partners</a>, 
+      <a href="https://umiamihealth.org/" target="_blank">UHealth: University of Miami Health System</a>.
+      Click on the partner names to visit their websites.
     </p>
   </section>
+
+<!-- Omari code
+        <div class="insurance-grid" aria-hidden="false">
+            <div class="insurance-card" tabindex="0"></div>
+            <div class="insurance-card" tabindex="0"></div>
+            <div class="insurance-card" tabindex="0"></div>
+            <div class="insurance-card" tabindex="0"></div>
+            <div class="insurance-card" tabindex="0"></div>
+            <div class="insurance-card" tabindex="0"></div>
+        </div>
+    </section> -->
 
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 Pulse Point. All rights reserved.</p>
   </footer>
 
-  <!-- Had to add the line here to trace properly -->
-  <script src="stylesheet" href="{{ url_for('static', filename='script.js')}} "></script>  
+  <!-- Correct script include for static JS -->
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
