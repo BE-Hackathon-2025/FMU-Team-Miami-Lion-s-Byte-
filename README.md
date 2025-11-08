@@ -14,11 +14,9 @@ _______________
 
 ## Project Description 🤯
 **....at least 3 sentences describing what the project does and how it works**
---> A local community healthcare resource for those who are in need, (especially college students)
---> It connects people to particular clinics and professionals based on what's being sought out.
+--> A local community healthcare resource for those who are in need, (especially college students) but also the older individuals
+--> It connects people to particular clinics and professionals based on what the user inputs-- their medical/health needs
 --> It comes with a review system to give a sense of forum and allow others to gauge who they are and aren't willing to see
---> Along with this there is also a chatbot dedicated to helping with mental health crises.
---> Finally, there is a directory for those with specialized needs such as those suffering from self harm, substance abuse, or sexual health issues.
 
 ## Project Value 💰
 **....at least 3 sentences describing your target customer and tangible benefits from your solution**
@@ -43,11 +41,11 @@ PP: https://lionsfmuniv-my.sharepoint.com/:p:/g/personal/astr1108_fmu_edu/Ec5nJI
 Code: 
 
 ### Team Checklist ✅
-- [ ] Team photo
+- [] Team photo
 - [] Team Slack channel
 - [] Communication established with mentor
 - [] Repo creation from this template
-- [ ] Flight Deck registration
+- [] Flight Deck registration
 
 ### Project Checklist 🏁
 - [ ] Presentation complete and linked 
