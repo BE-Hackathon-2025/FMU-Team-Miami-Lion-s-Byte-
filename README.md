@@ -6,7 +6,7 @@ _______________
 _______________
 
 # Pulse Point
---> Connecting you to care that matters !
+--> One pulse away from better help !
 
 ## Challenge Statement(s) Addressed 🎯
 --> To inform the community, orginally soley college students now the community, in regards to local healthcare providers and services.
