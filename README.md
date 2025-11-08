@@ -60,7 +60,7 @@ Florida Memorial University
 Miami Lion's Byte
 
 ### ✨ Contributors ✨
-* Tyla Bartlett 
-* Omari Bent 
-* Maraunda Saunders
-* Amauri Straford 
+* Tyla Bartlett (Pitch, Frontend, Graphics)
+* Omari Bent (Frontend, Backend)
+* Maraunda Saunders (Graphics, Powerpoint)
+* Amauri Straford (Backend, Frontend, Pitch)
