@@ -60,9 +60,7 @@ Florida Memorial University
 Miami Lion's Byte
 
 ### ✨ Contributors ✨
-* Tyla Bartlett (
+* Tyla Bartlett 
 * Omari Bent 
 * Maraunda Saunders
 * Amauri Straford 
-
-testing
