@@ -42,6 +42,7 @@ Code:
 
 ### Team Checklist ✅
 - [] Team photo
+- [TeamPhoto](https://github.com/user-attachments/assets/0a8cdbeb-9d07-4c30-9ab4-5261e9673313)
 - [] Team Slack channel
 - [] Communication established with mentor
 - [] Repo creation from this template
@@ -49,7 +50,8 @@ Code:
 
 ### Project Checklist 🏁
 - [ ] Presentation complete and linked 
-- [ ] Code merged to main branch
+- [ ] Code merged to main branch!
+
 
 ### School Name 🏫
 Florida Memorial University
