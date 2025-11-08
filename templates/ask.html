@@ -15,8 +15,8 @@
 </body>
 </html> -->
 
-<!-- Version 2 of my shitty code -->
-<!DOCTYPE html>
+<!-- Version 2 of my beta code -->
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -44,4 +44,44 @@
         <p><strong>Answer:</strong> {{ answer }}</p>
     {% endif %}
 </body>
-</html>
+</html> -->
+
+
+<!-- Omari Code -->
+<!-- <!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Ask a Medical Question</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <h2 style="text-align:center">Ask a Medical Question</h2>
+
+    <form method="post" style="max-width:720px;margin:16px auto;">
+        <label for="example_question">Choose an example question (optional):</label>
+        <select name="example_question" id="example_question">
+                <option value="">-- pick an example --</option>
+                {% for q in example_questions %}
+                    <option value="{{ q }}">{{ q }}</option>
+                {% endfor %}
+            </select>
+
+        <label for="question_input">Or type your own question:</label>
+        <input type="text" name="question" id="question_input" placeholder="Type your question here...">
+
+        <button type="submit">Ask</button>
+    </form>
+
+    {% if answer %}
+    <div class="answer-box" style="max-width:720px;margin:16px auto;">
+        <p><strong>Question:</strong> {{ question }}</p>
+        <p><strong>Answer:</strong> {{ answer }}</p>
+    </div>
+    {% endif %}
+</body>
+
+</html> -->
