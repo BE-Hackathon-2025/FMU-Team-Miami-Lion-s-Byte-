@@ -37,7 +37,7 @@ _______________
 - CSS [Frontend]
 
 ### Link to Demo Presentation 📽
-PP(canva slide deck): 
+PP(canva slide deck): https://www.canva.com/design/DAG4EueJi80/3HSaolTpQ6qa85u3XEHgHQ/view?utm_content=DAG4EueJi80&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h7d526f6466
 Code: 
 
 ### Team Checklist ✅
