@@ -61,8 +61,9 @@ body {
 
 .hero {
   /* styles.css lives at /static/styles.css, and images are at /static/images/
-     so use a path relative to the CSS file without going up a directory. EDITED BY AI */
-  background-image: url('images/bg_students.avif');
+     so use a path relative to the CSS file without going up a directory. EDITED BY AI
+     Constant issues with running the avif, jpeg, png */
+  background-image: url('images/bg_students.avif'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -76,7 +77,7 @@ body {
   padding: 0 20px;
 }
 
-/* This is what AI addded considering I wanted a black textbox background and i made too many errors */
+/* This is what AI addded considering I wanted a black textbox background and i made too many errors iplementing one*/
 .hero-text {
   background-color: rgba(0, 0, 0, 0.7); /* 30% opacity black background */
   padding: 2rem;

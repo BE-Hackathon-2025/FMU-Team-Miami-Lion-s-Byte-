@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pulse Point</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }} " />
+    <!-- had to re-trace thru renaming and correct syntax defining-->
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/Pulse_Point_logo-removebg-preview.png') }}" alt="Pulse Point Logo">
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#community">Community Partners</a></li>
+                <li><a href="#healthcare">Health Care Providers</a></li>
+                <li><a href="#insurance">Insurance</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#search">Search</a></li>
+                <li class="location-container">
+                    <button id="location-btn" class="location-btn" title="Use Location Services">
+                        <div class="location-btn-content">
+                            <svg class="location-icon" viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                            <span class="location-label">Select Location</span>
+                        </div>
+                        <span class="location-status"></span>
+                    </button>
+                    <div class="location-dropdown">
+                        <div class="dropdown-header">Select a City</div>
+                        <div class="dropdown-content">
+                            <button class="city-option" data-lat="25.7617" data-lng="-80.1918">Miami</button>
+                            <button class="city-option" data-lat="26.1224" data-lng="-80.1373">Fort Lauderdale</button>
+                            <button class="city-option" data-lat="26.7153" data-lng="-80.0534">West Palm Beach</button>
+                            <button class="city-option" data-lat="25.9087" data-lng="-80.2787">Miami Gardens</button>
+                            <button class="city-option" data-lat="26.2729" data-lng="-80.2707">Coral Springs</button>
+                            <button class="city-option" data-lat="26.0112" data-lng="-80.1495">Hollywood</button>
+                            <button class="city-option" data-lat="25.8576" data-lng="-80.2781">Hialeah</button>
+                            <button class="city-option" data-lat="26.3051" data-lng="-80.0905">Boca Raton</button>
+                            <button id="use-current-location" class="city-option current-location">
+                                <svg class="current-location-icon" viewBox="0 0 24 24" width="16" height="16">
+                                    <path d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm8.94 3A8.994 8.994 0 0013 3.06V1h-2v2.06A8.994 8.994 0 003.06 11H1v2h2.06A8.994 8.994 0 0011 20.94V23h2v-2.06A8.994 8.994 0 0020.94 13H23v-2h-2.06zM12 19c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"/>
+                                </svg>
+                                Use Current Location
+                            </button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h2>Welcome to Pulse Point</h2>
+            <p>One pulse away from better health!</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>
+            Pulse Point is a digital healthcare platform designed to make access to reliable health information simple and empowering. Our mission is to connect users, healthcare providers, and partners through innovation.
+        </p>
+    </section>
+
+    <!-- Community Partners -->
+    <section id="community" class="section red-bg">
+        <h2>Community Partners</h2>
+        <p>
+            We proudly collaborate with trusted organizations like Fidelity and Nationwide to bring accurate, accessible healthcare data to everyone.
+        </p>
+    </section>
+
+    <!-- Healthcare -->
+    <section id="healthcare" class="section">
+        <h2>Health Care Providers</h2>
+        <p>
+            Our network of physicians contributes valuable insights to ensure our users receive up-to-date, reliable medical information.
+        </p>
+        <!-- Provider data will be filtered by the main location selector -->
+        <div class="provider-graph-table-wrap">
+            <table class="provider-graph-table">
+                <thead>
+                    <tr>
+                        <th>Medical Professional</th>
+                        <th>Clinic</th>
+                        <th>Address</th>
+                        <th>Phone Number</th>
+                        <th>Price ($)</th>
+                        <th>Specialties</th>
+                        <th>Avg. Score</th>
+                        <th>Distance (km)</th>
+                    </tr>
+                </thead>
+                <tbody id="provider-graph-body">
+                    <!-- Populated by JS -->
+                </tbody>
+            </table>
+        </div>
+        <!-- Reviews moved to unified #reviews section -->
+    </section>
+
+    <!-- Insurance -->
+    <section id="insurance" class="section red-bg">
+        <h2>Insurance</h2>
+        <p>
+            Browse insurance providers, compare premiums and plans, and see which medical specialties are covered.
+        </p>
+        <div class="integrated-note">
+            <p><em>Insurance provider results have moved to the unified Medical Search below. Use the search box to view providers and coverage details.</em></p>
+        </div>
+        <!-- Reviews moved to unified #reviews section -->
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="section">
+        <h2>Reviews</h2>
+        <div class="reviews-columns">
+            <!-- Healthcare Reviews -->
+            <div class="reviews-section" aria-labelledby="healthcare-reviews-heading">
+                <h3 id="healthcare-reviews-heading">Healthcare Provider Reviews</h3>
+                <div id="healthcare-reviews"></div>
+                <div class="review-form">
+                    <h4>Submit Healthcare Provider Review</h4>
+                    <form id="healthcare-review-form" onsubmit="submitReview(event, 'healthcare')">
+                        <div class="form-group">
+                            <label for="healthcare-provider">Provider Name</label>
+                            <select id="healthcare-provider" name="provider_name" required>
+                                <option value="">Select a Healthcare Provider</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Rating</label>
+                            <div class="rating-input">
+                                <input type="radio" id="healthcare-star5" name="rating" value="5" required>
+                                <label for="healthcare-star5">★</label>
+                                <input type="radio" id="healthcare-star4" name="rating" value="4">
+                                <label for="healthcare-star4">★</label>
+                                <input type="radio" id="healthcare-star3" name="rating" value="3">
+                                <label for="healthcare-star3">★</label>
+                                <input type="radio" id="healthcare-star2" name="rating" value="2">
+                                <label for="healthcare-star2">★</label>
+                                <input type="radio" id="healthcare-star1" name="rating" value="1">
+                                <label for="healthcare-star1">★</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="healthcare-review">Your Review</label>
+                            <textarea id="healthcare-review" name="review_text" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-review-btn">Submit Review</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Insurance Reviews -->
+            <div class="reviews-section" aria-labelledby="insurance-reviews-heading">
+                <h3 id="insurance-reviews-heading">Insurance Provider Reviews</h3>
+                <div id="insurance-reviews"></div>
+                <div class="review-form">
+                    <h4>Submit Insurance Provider Review</h4>
+                    <form id="insurance-review-form" onsubmit="submitReview(event, 'insurance')">
+                        <div class="form-group">
+                            <label for="insurance-provider">Provider Name</label>
+                            <select id="insurance-provider" name="provider_name" required>
+                                <option value="">Select an Insurance Provider</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Rating</label>
+                            <div class="rating-input">
+                                <input type="radio" id="insurance-star5" name="rating" value="5" required>
+                                <label for="insurance-star5">★</label>
+                                <input type="radio" id="insurance-star4" name="rating" value="4">
+                                <label for="insurance-star4">★</label>
+                                <input type="radio" id="insurance-star3" name="rating" value="3">
+                                <label for="insurance-star3">★</label>
+                                <input type="radio" id="insurance-star2" name="rating" value="2">
+                                <label for="insurance-star2">★</label>
+                                <input type="radio" id="insurance-star1" name="rating" value="1">
+                                <label for="insurance-star1">★</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="insurance-review">Your Review</label>
+                            <textarea id="insurance-review" name="review_text" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-review-btn">Submit Review</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section id="search" class="section">
+        <div class="search-container">
+            <h2>Medical Search</h2>
+            <form id="searchForm" class="search-box">
+                <div class="search-row">
+                    <input type="text" id="searchInput" class="search-input" placeholder="Search for clinics, insurance, or describe symptoms...">
+                    <button type="submit" class="search-button">
+                        <svg class="search-icon" viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                        </svg>
+                        Search
+                    </button>
+                </div>
+                <div id="loading-spinner" class="spinner" style="display: none;" aria-hidden="true">
+                    <!-- Inline SVG heart for crisp rendering and accessibility -->
+                    <svg class="spinner-heart" role="status" aria-live="polite" width="48" height="48" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <title>Searching</title>
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                </div>
+            </form>
+            <div id="searchResults" class="search-content">
+                <!-- Search results will appear here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Pulse Point. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
