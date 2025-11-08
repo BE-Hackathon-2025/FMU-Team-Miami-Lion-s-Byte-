@@ -1,0 +1,8 @@
+# ok so this file holds code for when i am stuck outside of my env
+
+# #code to run in vs code terminal if stuck outside of venv
+# > Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+# > .\venv\Scripts\Activate
+
+#this is to follow the origin for the code folder
+#    https://github.com/BE-Hackathon-2025/FMU-Team-Miami-Lion-s-Byte-
