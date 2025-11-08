@@ -1,0 +1,75 @@
+<!-- Oldest form of code -->
+<!-- // this is my old code for the ask.html file
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ask a Medical Question</title>
+</head>
+<body>
+    <h2>Ask a Medical Question</h2>
+    <form method="post">
+        <input type="text" name="question" placeholder="Type your question here...">
+        <button type="submit">Ask</button>
+    </form>
+</body>
+</html> -->
+
+<!-- Version 2 of my shitty code -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask a Medical Question</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="main-nav">
+            <a href="/" class="nav-logo">MedAI Assistant</a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/ask" class="active">Ask Question</a>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <h2>Ask a Medical Question</h2>
+            <form action="/ask" method="post" class="question-form">
+                <div class="form-group">
+                    <label for="example_question">Choose an example question:</label>
+                    <select name="example_question" id="example_question" class="form-control">
+                        <option value="">-- Select an example --</option>
+                        {% for q in example_questions %}
+                            <option value="{{ q }}">{{ q }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="question_input">Or type your own question:</label>
+                    <textarea name="question" id="question_input" class="form-control" placeholder="Type your medical question here..." rows="3"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Ask Question</button>
+            </form>
+
+            <div id="loading-spinner" class="spinner" style="display: none;">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+
+            <div id="answer-container" class="answer-container" style="display: none;">
+                <!-- Answer will be dynamically inserted here -->
+            </div>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
