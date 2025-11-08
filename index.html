@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pulse Point</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }} " />
+    <!-- had to re-trace thru renaming and correct syntax defining-->
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/Pulse_Point_logo-removebg-preview.png') }}" alt="Pulse Point Logo">
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#community">Community Partners</a></li>
+                <li><a href="#healthcare">Health Care Providers</a></li>
+                <li><a href="#insurance">Insurance</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h2>Welcome to Pulse Point</h2>
+            <p>One pulse away from better health!</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>
+            Pulse Point is a digital healthcare platform designed to make access to reliable health information simple and empowering. Our mission is to connect users, healthcare providers, and partners through innovation.
+        </p>
+    </section>
+
+    <!-- Community Partners -->
+    <section id="community" class="section red-bg">
+        <h2>Community Partners</h2>
+        <p>
+            We proudly collaborate with trusted organizations like Fidelity and Nationwide to bring accurate, accessible healthcare data to everyone.
+        </p>
+    </section>
+
+    <!-- Healthcare -->
+    <section id="healthcare" class="section">
+        <h2>Health Care Providers</h2>
+        <p>
+            Our network of physicians contributes valuable insights to ensure our users receive up-to-date, reliable medical information.
+        </p>
+    </section>
+
+    <!-- Insurance -->
+    <section id="insurance" class="section red-bg">
+        <h2>Insurance</h2>
+        <p>
+            Pulse Point offers a unique opportunity to invest in the future of digital healthcare, expanding innovation and accessibility across the nation.
+        </p>
+    </section>
+
+    <!-- Dropdown Section -->
+    <section id="dropdown" class="section">
+        <h2>Select Your Location</h2>
+        <select id="locationSelect">
+      <option value="default" disabled selected>Select your location</option>
+      <option value="ny">New York</option>
+      <option value="ca">California</option>
+      <option value="tx">Texas</option>
+      <option value="fl">Florida</option>
+      <!-- Add more options as needed -->
+    </select>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Pulse Point. All rights reserved.</p>
+    </footer>
+
+    <!-- Had to add the line here to trace properly -->
+    <script src="stylesheet" href="{{ url_for('static', filename='script.js')}} "></script>
+</body>
+
+</html>
